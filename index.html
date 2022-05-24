@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character select</title>
+    <link rel="stylesheet" href="./src/css/Link/variaveis.css">
+    <link rel="stylesheet" href="./src/css/Link/reset.css">
+    <link rel="stylesheet" href="./src/css/Link/fontes.css">
+    <link rel="stylesheet" href="./src/css/Link/animacoes.css">
+    <link rel="stylesheet" href="./src/css/Link/estilos.css">
+    <link rel="stylesheet" href="./src/css/Link/responsivo.css">
+
+</head>
+
+<body>
+    <main>
+        <header class="cabecalho">
+            <h1 class="titulo">
+                Character Select
+            </h1>
+        </header>
+        <div class="selecao-de-personagens">
+            <div class="personagem-maior personagem-player-1">
+                <img src="./src/css/imagens/elsa.png" alt="Imagem da personagem Elsa jogador 1"
+                    id="personagem-jogador-1">
+                <div class="nome">
+                    <h2 id= "nome-jogador-1">Elsa</h2>
+                </div>
+            </div>  
+
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="elsa" data-name="Elsa">
+                    <span class="tag">1P</span>
+                    <img src="./src/css/imagens/elsa.jpg" alt="Personagem Elsa selecionado jogador 1">
+                </li>
+
+                <li class="personagem" id="anna" data-name="Anna">
+                    <span class="tag">1P</span>
+                    <img src="./src/css/imagens/anna.jpg"
+                        alt="Imagem do personagem Anna selecionado jogador 1">
+                </li>
+
+                <li class="personagem" id="olaf" data-name="Olaf">
+                    <span class="tag">1P</span>
+                    <img src="./src/css/imagens/olaf.jpg"
+                        alt="Imagem do personagem Olaf selecionado jogador 1">
+                </li>
+
+                <li class="personagem" id="kristoff" data-name="Kristoff">
+                    <span class="tag">1P</span>
+                    <img src="./src/css/imagens/kristoff.jpg"
+                        alt="Imagem do personagem Kristoff selecionado jogador 1">
+                </li>
+
+                <li class="personagem" id="sven" data-name="Sven">
+                    <span class="tag">1P</span>
+                    <img src="./src/css/imagens/sven.jpg"
+                        alt="Imagem do personagem Sven selecionado jogador 1">
+                </li>
+
+                <li class="personagem" id="honeymaren" data-name="Honeymaren">
+                    <span class="tag">1P</span>
+                    <img src="./src/css/imagens/honeymaren.jpg" alt="Imagem do personagem Honeymaren selecionado jogador 1">
+                </li>
+
+                <li class="personagem" id="marshmallow" data-name="Marshmallow">
+                    <span class="tag">1P</span>
+                    <img src="./src/css/imagens/marshmallow.jpg"
+                        alt="Imagem do personagem Marshmallow selecionado jogador 1">
+                </li>
+
+                <li class="personagem" id="bruni" data-name="Bruni">
+                    <span class="tag">1P</span>
+                    <img src="./src/css/imagens/bruni.jpg"
+                        alt="Imagem do personagem Bruni selecionado jogador 1">
+                </li>
+
+                <li class="personagem player-2-selecionado" id="hans" data-name="Hans">
+                    <span class="tag">2P</span>
+                    <img src="./src/css/imagens/hans.jpg"
+                        alt="Imagem do personagem Hans selecionado jogador 2">
+                </li>
+            </ul>
+
+            <div class="personagem-maior personagem-player-2">
+                <img src="./src/css/imagens/hans.png" alt="Imagem do personagem Hans jogador 2"
+                    id="personagem-jogador-2">
+                <div class="nome">
+                    <h2>Hans</h2>
+                </div>
+            </div>
+        </div>
+        <audio id="player" src="./src/css/imagens/audio.mp3" loop></audio>
+        <button class="botao1" onclick="document.getElementById('player').play()">Play</button>
+        <button class="botao2" onclick="document.getElementById('player').pause()">Pause</button>
+
+    </main>
+    <script src="./src/css/js/index.js"></script>
+</body>
+
+</html>
